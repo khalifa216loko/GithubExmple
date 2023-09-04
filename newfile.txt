@@ -1,0 +1,51 @@
+To add and commit changes in Git, you follow these two steps:
+
+**Step 1: Add Changes**
+
+Use the `git add` command to stage the changes you want to include in the next commit. You can stage specific files or all changes in the current directory. Here are some common examples:
+
+- To stage a specific file:
+
+  ```bash
+  git add filename.ext
+  ```
+
+  Replace `filename.ext` with the name of the file you want to stage.
+
+- To stage multiple specific files:
+
+  ```bash
+  git add file1.txt file2.txt
+  ```
+
+- To stage all changes in the current directory:
+
+  ```bash
+  git add .
+  ```
+
+**Step 2: Commit Changes**
+
+After staging your changes, you commit them along with a descriptive commit message. The commit message should briefly explain what the commit does or why you made the changes. Use the `git commit` command for this:
+
+```bash
+git commit -m "Your commit message here"
+```
+
+Replace `"Your commit message here"` with a meaningful description of your changes.
+
+Here's a step-by-step example:
+
+```bash
+# Make changes to your files
+echo "Hello, World!" > hello.txt
+echo "This is a new file." > newfile.txt
+
+# Stage the changes
+git add hello.txt newfile.txt
+
+# Commit the changes with a descriptive message
+git commit -m "Add a greeting message and a new file"
+```
+
+Your changes are now committed to the Git repository, and you've provided a clear commit message to explain the purpose of the commit. You can continue making more changes, staging them with `git add`, and committing them with `git commit` as needed to track your project's history.
